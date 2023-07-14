@@ -7,6 +7,7 @@ body {
   perspective: 10rem;
 }
 
+
 #canvas {
   position: absolute;
   width: 100%;
@@ -143,11 +144,12 @@ body {
   animation: raining 4s linear infinite both -1s;
 }
 
+
 @keyframes raining {
   from {
     transform: translateY(-1200px);
   }
   to {
-    transform: translateY(869px);
+    transform: translateY(860px);
   }
 }
