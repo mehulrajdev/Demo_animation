@@ -1,1 +1,1 @@
-# Demo animation of flying rocket 
+# Demo animation of flying rocket (JS)
