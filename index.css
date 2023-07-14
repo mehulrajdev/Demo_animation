@@ -1,0 +1,153 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: #1a032b;
+  overflow: hidden;
+  perspective: 10rem;
+}
+
+#canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.fire-wrapper {
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform-origin: top center;
+  transform: translate(-50%, 0) rotate3d(1, 0, 0, 60deg);
+  width: 5rem;
+}
+
+.fire {
+  animation: whoosh 1s linear infinite both;
+  width: 100%;
+}
+
+@keyframes whoosh {
+  from {
+    transform: translateY(-25%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.rain {
+  position: absolute;
+  width: 1rem;
+  height: 10rem;
+  background: #ffffff;
+  border-radius: 20%;
+  opacity: 0.2;
+  z-index: -1;
+}
+
+.drop {
+  width: 1rem;
+  height: 7rem;
+  background: #ffffff;
+  position: absolute;
+  border-radius: 20%;
+  opacity: 0.2;
+}
+
+.rain1 {
+  left: 5rem;
+  top: 2rem;
+  animation: raining 2s linear infinite both;
+}
+
+.rain2 {
+  left: 15rem;
+  top: 10rem;
+  animation: raining 3s linear infinite both;
+}
+
+.drop2 {
+  top: 12rem;
+  animation: raining 4s linear infinite both -2s;
+}
+
+.rain3 {
+  left: 5rem;
+  top: 35rem;
+  animation: raining 3s linear infinite both;
+}
+
+.rain4 {
+  right: 23rem;
+  top: 6rem;
+  animation: raining 4s linear infinite both;
+}
+
+.rain5 {
+  left: 25rem;
+  top: 47rem;
+  animation: raining 3s linear infinite both -3s;
+}
+
+.drop5 {
+  top: -6rem;
+  animation: raining 2s linear infinite both;
+}
+
+.rain6 {
+  right: 10rem;
+  top: 34rem;
+  animation: raining 3s linear infinite both;
+}
+
+.rain7 {
+  left: 34rem;
+  top: 10rem;
+  animation: raining 2s linear infinite both -5s;
+}
+
+.rain8 {
+  right: 25rem;
+  top: 40rem;
+  animation: raining 3s linear infinite both;
+}
+
+.drop8 {
+  top: -7rem;
+  animation: raining 4s linear infinite both -6s;
+}
+
+.rain9 {
+  right: 5rem;
+  top: 15.5rem;
+  animation: raining 3s linear infinite both;
+}
+
+.rain10 {
+  left: 24rem;
+  top: -4rem;
+  animation: raining 2s linear infinite both -3s;
+}
+
+.drop11 {
+  right: 17rem;
+  top: 20rem;
+  animation: raining 3s linear infinite both;
+}
+
+.drop12 {
+  right: 15rem;
+  top: 50rem;
+  animation: raining 4s linear infinite both -1s;
+}
+
+@keyframes raining {
+  from {
+    transform: translateY(-1200px);
+  }
+  to {
+    transform: translateY(869px);
+  }
+}
